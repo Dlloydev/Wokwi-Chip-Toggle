@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "author": "Dlloydev",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-vcc", "id": "pwr2", "top": -287.24, "left": 115.2, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": -211.2, "left": 114.6, "attrs": {} },
+    { "type": "chip-toggle", "id": "toggle1", "top": -248.58, "left": 148.8, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -253,
+      "left": 38.4,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -233.999999999886,
+      "left": 340.200000000114,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -281.99999999988603,
+      "left": 340.200000000114,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -245.649999999886,
+      "left": 278.400000000114,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-gnd",
+      "id": "gnd3",
+      "top": -182.399999999886,
+      "left": 364.200000000114,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -226.44999999988602,
+      "left": 278.400000000114,
+      "attrs": { "value": "330" }
+    }
+  ],
+  "connections": [
+    [ "toggle1:nQ", "r2:1", "green", [ "v0" ] ],
+    [ "toggle1:Q", "r1:1", "green", [ "h0" ] ],
+    [ "r1:2", "led2:A", "gray", [ "v0" ] ],
+    [ "r2:2", "led1:A", "gray", [ "v0", "h8.4", "v28.8" ] ],
+    [ "led2:C", "gnd3:GND", "black", [ "v0", "h9.2" ] ],
+    [ "gnd3:GND", "led1:C", "black", [ "v0" ] ],
+    [ "pwr2:VCC", "toggle1:VCC", "red", [ "v0" ] ],
+    [ "toggle1:GND", "gnd1:GND", "black", [ "h0" ] ],
+    [ "toggle1:Tog", "btn1:1.r", "green", [ "h0" ] ],
+    [ "toggle1:GND", "btn1:2.r", "black", [ "h0" ] ]
+  ],
+  "dependencies": { "chip-pwm": "github:Dlloydev/Wokwi-Chip-Toggle@1.0.0" }
+}

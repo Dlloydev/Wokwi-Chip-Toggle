@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "name": "Toggle",
+  "author": "dlloydev",
+  "license": "MIT",
+  "docs": "https://github.com/Dlloydev/Wokwi-Chip-Toggle/blob/main/docs/README.md",
+  "pins": [
+    "Tog",
+    "VCC",
+    "GND",
+    "nQ",
+    "",
+    "Q"
+  ]
+}
