@@ -61,5 +61,5 @@
     [ "toggle1:Tog", "btn1:1.r", "green", [ "h0" ] ],
     [ "toggle1:GND", "btn1:2.r", "black", [ "h0" ] ]
   ],
-  "dependencies": { "chip-pwm": "github:Dlloydev/Wokwi-Chip-Toggle@1.0.0" }
+  "dependencies": { "chip-toggle": "github:Dlloydev/Wokwi-Chip-Toggle@1.0.0" }
 }
