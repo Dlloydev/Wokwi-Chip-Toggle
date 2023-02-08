@@ -17,8 +17,6 @@ This custom chip for [Wokwi](https://wokwi.com/) provides Toggle flip-flop compl
 | Tog  | Input for pushbutton control, configured INPUT_PULLUP mode |
 | Q    | Output, initial state is LOW                               |
 | nQ   | Inverted Output, initial state is HIGH                     |
-| GND  | Ground                                                     |
-| VCC  | Supply voltage                                             |
 
 ## Usage
 
@@ -26,7 +24,7 @@ To use this chip in your project, include it as a dependency in your `diagram.js
 
 ```json
   "dependencies": {
-    "chip-toggle": "github:Dlloydev/Wokwi-Chip-toggle@1.0.0"
+    "chip-toggle": "github:Dlloydev/Wokwi-Chip-toggle@1.0.1"
   }
 ```
 

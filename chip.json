@@ -6,10 +6,8 @@
   "docs": "https://github.com/Dlloydev/Wokwi-Chip-Toggle/blob/main/docs/README.md",
   "pins": [
     "Tog",
-    "VCC",
-    "GND",
-    "nQ",
     "",
+    "nQ",
     "Q"
   ]
 }
